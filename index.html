@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,301,400,401,500,501,700,900,901,1,2&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Heros League</title>
@@ -11,7 +12,7 @@
         <header>
             <h1 class="titre">Heros League</h1>
             <nav class="titre__navigation">
-                <a href="#" class="titre__navigation--categorie">Service</a
+                <a href="#" class="titre__navigation--categorie">Services</a
                 ><a href="#" class="titre__navigation--categorie">Nos Héros</a
                 ><a href="#" class="titre__navigation--categorie">Témoignages</a
                 ><a href="#" class="titre__navigation--categorie"
@@ -223,28 +224,31 @@
                         >
                     </div>
                 </div>
-                <button class="container__heros-button button">
-                    Tous nos héros
-                </button>
             </div>
+            <button class="container__heros-button button">
+                Tous nos héros
+            </button>
+            <h2 class="container__temoignages-title">
+                <em>- </em> les Témoignages de nos clients <em>-</em>
+            </h2>
             <div class="container__temoignages">
-                <h2 class="container__temoignages-title">
-                    <em>- </em> les Témoignages de nos clients <em>-</em>
-                </h2>
+
                 <article class="container__temoignages-client">
                     <img
                         src="./ressources/images/testimony-1.png"
                         alt="1er témoignages"
                         class="container__temoignages-client-img"
                     />
-                    <span class="container__temoignages-client-nom"
-                        >Tombédeu O.</span
-                    >
-                    <p>
-                        "Grâce à Heros League, j'ai pu déménager super
-                        rapidement. Attention à l'odeur laissée par les
-                        tentacules ceci-dit. Merci Poulpy !"
-                    </p>
+                    <div class="text-temoignage">
+                        <span class="container__temoignages-client-nom"
+                            >Tombédeu O.</span
+                        >
+                        <p>
+                            "Grâce à Heros League, j'ai pu déménager super
+                            rapidement. Attention à l'odeur laissée par les
+                            tentacules ceci-dit. Merci Poulpy !"
+                        </p>
+                </div>
                 </article>
                 <article class="container__temoignages-client">
                     <img
@@ -252,6 +256,7 @@
                         alt="1er témoignages"
                         class="container__temoignages-client-img"
                     />
+                    <div class="text-temoignage">
                     <span class="container__temoignages-client-nom"
                         >Jella N.</span
                     >
@@ -260,6 +265,7 @@
                         et sur ses conseils j'ai investi dans les bitcoins,
                         affaire à suivre !"
                     </p>
+                    </div>
                 </article>
                 <article class="container__temoignages-client">
                     <img
@@ -267,6 +273,7 @@
                         alt="1er témoignages"
                         class="container__temoignages-client-img"
                     />
+                    <div class="text-temoignage">
                     <span class="container__temoignages-client-nom"
                         >Bob O.</span
                     >
@@ -276,6 +283,7 @@
                         orange et plus noir, elle l'aurait retrouvé dans un
                         produit chimique spécial. Je la crois sur parole !"
                     </p>
+                    </div>
                 </article>
                 <article class="container__temoignages-client">
                     <img
@@ -283,6 +291,7 @@
                         alt="1er témoignages"
                         class="container__temoignages-client-img"
                     />
+                    <div class="text-temoignage">
                     <span class="container__temoignages-client-nom"
                         >Coupéhala H.</span
                     >
@@ -291,6 +300,7 @@
                         amenée au travail en un temps record. Par contre
                         j'aimerais bien retrouver ma voiture maintenant."
                     </p>
+                    </div>
                 </article>
             </div>
             <div class="container__contact">
@@ -336,9 +346,10 @@
                     <textarea
                         name="message"
                         id="message"
-                        class="formulaire__contact-message"
+                        class="formulaire__contact-message-ta"
                         cols="6"
                     ></textarea>
+                    <button class="button button__form">envoyer</button>
                 </form>
             </div>
         </main>
